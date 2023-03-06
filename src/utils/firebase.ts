@@ -1,6 +1,5 @@
 import * as admin from 'firebase-admin';
 import { Request, Response, NextFunction } from 'express';
-import fs from 'fs/promises';
 
 export default class FirebaseAuth {
     private firebaseSA = Buffer.from(process.env.FIREBASE_SA, 'base64').toString('utf8');
@@ -8,15 +7,6 @@ export default class FirebaseAuth {
     private firebaseApp = admin.initializeApp({
       credential: admin.credential.cert(JSON.parse(this.firebaseSA)),
     });
-
-    writeServiceAccount = async () => {
-      // @ts-ignore
-      await fs.writeFile('./service-account.json', this.firebaseSA, (err) => {
-        if (err) {
-          console.log(err);
-        }
-      });
-    };
 
     middlewareAuth = async (req: Request, res: Response, next: NextFunction): Promise<any> => {
       try {
