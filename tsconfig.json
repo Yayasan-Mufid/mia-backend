@@ -20,8 +20,8 @@
       "@handlers/*": [
         "src/handlers/*"
       ],
-      "@utils/*": [
-        "src/utils/*"
+      "@helpers/*": [
+        "src/helpers/*"
       ]
     }
   },
