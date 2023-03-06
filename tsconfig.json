@@ -19,6 +19,9 @@
       ],
       "@handlers/*": [
         "src/handlers/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
       ]
     }
   },

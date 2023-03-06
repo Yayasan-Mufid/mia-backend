@@ -3,6 +3,7 @@ prisma/migrations/
 .env
 .DS_store
 package-lock.json
+service-account.json
 dist/
 *.png
 *.jpeg

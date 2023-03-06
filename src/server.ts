@@ -1,6 +1,6 @@
 import 'module-alias/register';
 import dotenv from 'dotenv';
-import AuthController from '@handlers/auth/auth.controller';
+import AuthController from './handlers/auth/auth.controller';
 import App from './app';
 import Handler from './handlers/handler';
 
