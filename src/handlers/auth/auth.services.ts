@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+// eslint-disable-next-line no-unused-vars
 
 export default class AuthServices {
   firebaseSignin = async (req: Request, res: Response): Promise<void> => {

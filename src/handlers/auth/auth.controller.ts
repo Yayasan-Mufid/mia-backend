@@ -20,6 +20,6 @@ export default class AuthController {
 
   public initializeRoutes(): void {
     this.router.get(`${this.path}/firebase-signin`, this.firebaseAuth.middlewareAuth, this.authServices.firebaseSignin);
-    this.router.get(`${this.path}/session`, this.middlewareAuth.checkToken, this.authServices.sessionCheck);
+    this.router.get(`${this.path}/session`, this.middlewareAuth.hasRoles(), this.authServices.sessionCheck);
   }
 }
