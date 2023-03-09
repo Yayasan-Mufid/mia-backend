@@ -1,27 +1,27 @@
-# Voucher Code Validation
+# MIA Backend
 
-Voucher validation is application builded from Typescript for celebration campaign to give away 1000
-pieces of cash vouchers to its loyal customers.
+MIA Backend is Application Programming Interface for MIA (Mufid Islamic Academy) builded with typescript, prisma, express.js. As a backend application, MIA-Backend using postgresql as RDBMS for supporting databases.
 
 ## Features
 
-- Show customers.
-- Show Available vouchers.
-- Check eligiblity customer.
-- Validation a customer through endpoint.
-- Redeem a voucher with some validation.
+- Roles management.
+- Learning.
+- Learning Assessment.
+- Payment Validation.
+- Administration.
 
 ## Tech
 
-voucher validation uses a number of open source projects to work properly:
+MIA-Backend uses a number of open source projects to work properly:
 
 - [ExpressJS] - web application framework
 - [Prisma] - Next Generation ORM
 - [Multer] - File upload middleware.
+- [Postgresql] - RDBMS for databases.
 
 ## Installation
 
-Voucher Validation requires [Node.js](https://nodejs.org/) v16+ to run.
+MIA-Backend requires [Node.js](https://nodejs.org/) v18+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
@@ -38,9 +38,3 @@ npm run dev
 ```
 
 ## API Documentation
-
-Here it's API documentation for voucher validation.
-
-| Platform | URL |
-| ------ | ------ |
-| Postman | https://documenter.getpostman.com/view/14628291/2s847MsBD1 |
